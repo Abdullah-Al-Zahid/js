@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>oi mama na please</h1>
+    <h3 id="handler-status">halarpo practice kor</h3>
+    <button onclick="handleOnClick()">tip mar</button>
+    <button id="okk">she has made us polatok</button>
+
+    <br>
+    <br>
+
+    <h1>get ready for binodon</h1>
+    <h3>input text</h3>
+    <p id="nameKi">inter your name</p>
+    <input type="text" id="nameLikh">
+    <button id="oimama">
+        give me your name
+    </button>
+    
+    <script>
+        function handleOnClick(){
+            const handlerStatus = document.getElementById('handler-status')
+            handlerStatus.innerText ='bosen bosen bose jan hei jalali bose jan'
+        }
+        document.getElementById('okk').addEventListener('click', function(){
+            const handlerStatus = document.getElementById('handler-status')
+            handlerStatus.innerText='aha tamatar bare majedar wah tamatar bare majeder'
+        })
+        document.getElementById('oimama').addEventListener('click', function(){
+            const nameInputField = document.getElementById('nameLikh')
+            const inputName = nameInputField.value
+
+            const p = document.getElementById('nameKi')
+            p.innerText = inputName;
+            nameInputField.value = ''
+            
+        })
+    </script>
+</body>
+</html>

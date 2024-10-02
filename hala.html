@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>get ready for binodon</h1>
+    <h3>input text</h3>
+    <p id="nameKi">inter your name</p>
+    <input type="text" id="nameLikh">
+    <button id="oimama">
+        give me your name
+    </button>
+    <script>
+        document.getElementById('oimama').addEventListener('click', function(){
+            const nameInputField = document.getElementById('nameLikh')
+            const inputName = nameInputField.value
+
+            const p = document.getElementById('nameKi')
+            p.innerText = inputName;
+            
+        })
+    </script>
+</body>
+</html>

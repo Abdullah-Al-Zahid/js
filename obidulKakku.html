@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="comment-Section">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit perferendis consectetur quibusdam fugit mollitia dicta repellendus reiciendis expedita eveniet provident est doloremque ipsum et omnis, perspiciatis rerum, illum fugiat totam soluta ut recusandae exercitationem laboriosam aut? Quia molestiae doloribus quidem odit iure, esse saepe sunt accusantium praesentium, possimus, placeat corporis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit perferendis consectetur quibusdam fugit mollitia dicta repellendus reiciendis expedita eveniet provident est doloremque ipsum et omnis, perspiciatis rerum, illum fugiat totam soluta ut recusandae exercitationem laboriosam aut? Quia molestiae doloribus quidem odit iure, esse saepe sunt accusantium praesentium, possimus, placeat corporis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit perferendis consectetur quibusdam fugit mollitia dicta repellendus reiciendis expedita eveniet provident est doloremque ipsum et omnis, perspiciatis rerum, illum fugiat totam soluta ut recusandae exercitationem laboriosam aut? Quia molestiae doloribus quidem odit iure, esse saepe sunt accusantium praesentium, possimus, placeat corporis.</p>
+    </div>
+    <div>
+        <textarea name="" id="yourOpinion" cols="60"
+        rows="30"></textarea>
+        <button id="uploadButton">upload your comment</button>
+    </div>
+    <script>
+        document.getElementById('uploadButton').addEventListener('click',function(){
+            const commentInput = document.getElementById('yourOpinion')
+            const newComment = commentInput.value 
+
+            const commentSection = document.getElementById('comment-Section')
+            const p = document.createElement('p')
+            p.innerText = newComment
+            commentSection.appendChild(p)
+            commentInput.value = ''
+
+        })
+    </script>
+</body>
+</html>

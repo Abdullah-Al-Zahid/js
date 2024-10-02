@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Kire Bolod ki khobor tur</h1>
+    <button title="ture ami bath khilamu na" onclick="console.log('betha korce');
+    ">sir alone siam</button>
+    <button onclick="console.log(78);
+    ">tip mar</button>
+    <button onclick="document.body.style.backgroundColor='red'">oi mama na please</button>
+    <button onclick="makeBlue()">she has made us polatok</button>
+    <button id="tomato">upppps</button>
+    <button id="purpleHoo">oreh batpar</button>
+    <button id="oliveHoo">i am gating immature</button>
+    <button id="goldenrod">oi hala koc ki</button>
+    <script>  function makeBlue(){
+        document.body.style.backgroundColor='blue';
+    }</script>
+    <script>
+        const makeTomato = document.getElementById('tomato')
+        makeTomato.onclick = tomatoHoice
+
+        function tomatoHoice(){
+            document.body.style.backgroundColor='tomato'
+        }
+    </script>
+    <script>const makePurple = document.getElementById('purpleHoo')
+    makePurple.onclick = function purpleHoija(){
+        document.body.style.backgroundColor='purple'
+    }
+    </script>
+    <script>
+        const makeOlive = document.getElementById('oliveHoo')
+        makeOlive.addEventListener('click', oliveSimSim)
+
+        function oliveSimSim(){
+            document.body.style.backgroundColor ='olive'
+        }
+    </script>
+    <script>
+        document.getElementById('goldenrod').addEventListener('click', function(){
+            document.body.style.backgroundColor='goldenrod'
+        })
+    </script>
+</body>
+</html>
